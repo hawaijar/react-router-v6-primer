@@ -8,6 +8,7 @@ import {
 import { css } from "@emotion/css";
 import Admin from "./routes/Admin";
 import Product from "./routes/Product";
+import Navigator from "./navigation/Nav";
 
 const AppStyles = css`
   margin: 50px auto;
@@ -25,6 +26,7 @@ const App = () => {
     <div className={AppStyles}>
       <Router>
         <div className="Container">
+          <Navigator />
           <Routes>
             <Route path="/" element={<Product />} />
             <Route path="/admin" element={<Admin />} />
