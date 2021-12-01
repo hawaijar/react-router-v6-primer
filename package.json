@@ -9,7 +9,7 @@
     "react-router-dom": "6.0.0-beta.0"
   },
   "scripts": {
-    "start": "concurrently \"webpack serve --mode development\" \"json-server --watch db.json --port 5000 --delay 1000 --routes routes.json\"",
+    "start": "concurrently \"webpack serve --mode development\" \"json-server --watch db.json --port 5001 --delay 1000 --routes routes.json\"",
     "build": "webpack --mode production"
   },
   "devDependencies": {
